@@ -2,10 +2,10 @@
 
 Study developed based on 4 tasks related to geometric analyses in C#:
 
-1. [Analyze all columns that have an area less than or equal to 10m².](./csharp-coding-proficiency/Services/Task01_AnalyseColumnArea.cs)
-1. [Analyze all columns that are inside the terrain.](./csharp-coding-proficiency/Services/Task02_AnalyseColumnsInsideTerrain.cs)
+1. [Analyze all columns that have an area less than or equal to 10m²](./csharp-coding-proficiency/Services/Task01_AnalyseColumnArea.cs)
+1. [Analyze all columns that are inside the terrain](./csharp-coding-proficiency/Services/Task02_AnalyseColumnsInsideTerrain.cs)
 1. [Analyze if there is a 7m space between all columns](./csharp-coding-proficiency/Services/Task03_AnalyseSpaceBetweenColumns.cs)
-1. [Analyze all columns that are rectangular. Do not use the Polygon.IsRectangular property for this.](./csharp-coding-proficiency/Services/Task04_AnalyseColumnRectangular.cs)
+1. [Analyze all columns that are rectangular. Do not use the Polygon.IsRectangular property for this](./csharp-coding-proficiency/Services/Task04_AnalyseColumnRectangular.cs)
 
 
 ## Installation
