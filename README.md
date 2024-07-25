@@ -1,86 +1,62 @@
-# GeometryUtils
+# C# Coding Proficiency Tests
 
-GeometryUtils é uma biblioteca em C# que fornece funções para criar e manipular polígonos, bem como calcular distâncias entre eles. A biblioteca usa a NetTopologySuite para operações geométricas.
+Study developed based on 4 tasks related to geometric analyses in C#:
 
-## Sumário
+1. [Analyze all columns that have an area less than or equal to 10m².](./csharp-coding-proficiency/Services/Task01_AnalyseColumnArea.cs)
+1. [Analyze all columns that are inside the terrain.](./csharp-coding-proficiency/Services/Task02_AnalyseColumnsInsideTerrain.cs)
+1. [Analyze if there is a 7m space between all columns](./csharp-coding-proficiency/Services/Task03_AnalyseSpaceBetweenColumns.cs)
+1. [Analyze all columns that are rectangular. Do not use the Polygon.IsRectangular property for this.](./csharp-coding-proficiency/Services/Task04_AnalyseColumnRectangular.cs)
 
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Testes](#testes)
-- [Dependências](#dependências)
-- [Licença](#licença)
 
-## Instalação
+## Installation
 
-1. Clone o repositório para sua máquina local:
+1. Clone the repository to your local machine:
     ```sh
-    git clone https://github.com/seu-usuario/GeometryUtils.git
+    git clone https://github.com/mayconrfreitas/csharp-coding-proficiency.git
     ```
 
-2. Navegue até o diretório do projeto:
+2. Navigate to the project directory:
     ```sh
-    cd GeometryUtils
+    cd csharp-coding-proficiency
     ```
 
-3. Restaure os pacotes NuGet:
+3. Restore the NuGet packages:
     ```sh
     dotnet restore
     ```
 
-## Uso
+## Tests
 
-### Criando um Polígono
+This project includes unit tests to ensure the correct functionality of the functions. The tests are located in the `tests` folder and can be run using the `dotnet test` command.
 
-Você pode criar um polígono usando a função `CreatePolygon`. A função recebe dois arrays de doubles que representam as coordenadas x e y dos vértices do polígono.
+### Included Unit Tests
 
-```csharp
-var polygon = GeometryUtils.CreatePolygon(new[] { 2.0, 6.0, 6.0, 2.0, 2.0 }, new[] { 3.0, 3.0, 5.0, 5.0, 3.0 });
-```
+- **TestCheckAreaLessOrEqualsTo10m2**: Checks if the area of the polygons is less than or equal to 10 m².
+- **TestCheckColumnsInsideTerrain**: Checks if the polygons are within a specific area (terrain).
+- **TestCheckSpaceBetweenColumns**: Checks if there is sufficient space between the polygons.
+- **TestsCheckColumnsRectangular**: Checks if the polygons are rectangular.
 
-### Calculando a Distância entre Polígonos
+### Running the Tests
 
-Para calcular a distância mínima entre dois polígonos, use a função `CalculateDistance`.
-
-```csharp
-var polygon1 = GeometryUtils.CreatePolygon(new[] { 2.0, 6.0, 6.0, 2.0, 2.0 }, new[] { 3.0, 3.0, 5.0, 5.0, 3.0 });
-var polygon2 = GeometryUtils.CreatePolygon(new[] { 9.0, 12.0, 10.0, 7.0, 9.0 }, new[] { 5.0, 8.0, 10.0, 7.0, 5.0 });
-
-double distance = GeometryUtils.CalculateDistance(polygon1, polygon2);
-Console.WriteLine($"Distância mínima entre os polígonos: {distance}");
-```
-
-## Testes
-
-Este projeto inclui testes unitários para garantir o funcionamento correto das funções. Os testes estão localizados na pasta `tests` e podem ser executados usando o comando `dotnet test`.
-
-### Testes Unitários Incluídos
-
-- **TestCheckAreaLessOrEqualsTo10m2**: Verifica se a área dos polígonos é menor ou igual a 10 m².
-- **TestCheckColumnsInsideTerrain**: Verifica se os polígonos estão dentro de uma área específica (terreno).
-- **TestCheckSpaceBetweenColumns**: Verifica se há espaço suficiente entre os polígonos.
-- **TestsCheckColumnsRectangular**: Verifica se os polígonos são retangulares.
-
-### Executando os Testes
-
-Para executar os testes, use o seguinte comando:
+To run the tests, use the following command:
 
 ```sh
 dotnet test
 ```
 
-## Dependências
+## Dependencies
 
-Este projeto depende das seguintes bibliotecas:
+This project depends on the following libraries:
 
-- **NetTopologySuite**: Biblioteca para operações geométricas.
-- **xUnit**: Framework de testes para .NET.
+- **NetTopologySuite**: Library for geometric operations.
+- **xUnit**: Test framework for .NET.
 
-Para instalar as dependências, certifique-se de restaurar os pacotes NuGet:
+To install the dependencies, make sure to restore the NuGet packages:
 
 ```sh
 dotnet restore
 ```
 
-## Licença
+## License
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.

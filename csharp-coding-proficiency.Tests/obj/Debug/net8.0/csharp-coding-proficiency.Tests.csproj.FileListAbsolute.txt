@@ -101,3 +101,4 @@ C:\Users\MayconFreitas\Documents\source\AECoder\csharp-coding-proficiency\csharp
 C:\Users\MayconFreitas\Documents\source\AECoder\csharp-coding-proficiency\csharp-coding-proficiency.Tests\obj\Debug\net8.0\csharp-coding-proficiency.Tests.pdb
 C:\Users\MayconFreitas\Documents\source\AECoder\csharp-coding-proficiency\csharp-coding-proficiency.Tests\obj\Debug\net8.0\csharp-coding-proficiency.Tests.genruntimeconfig.cache
 C:\Users\MayconFreitas\Documents\source\AECoder\csharp-coding-proficiency\csharp-coding-proficiency.Tests\obj\Debug\net8.0\ref\csharp-coding-proficiency.Tests.dll
+C:\Users\MayconFreitas\Documents\source\AECoder\csharp-coding-proficiency\csharp-coding-proficiency.Tests\obj\Debug\net8.0\csharp-coding-proficiency.Tests.sourcelink.json
